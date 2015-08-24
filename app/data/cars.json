@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "Year": "2015",
+      "make": "Audi",
+      "model": "A6",
+      "image": "images/car1.jpg"
+    },
+    {
+      "Year": "2015",
+      "make": "Benz",
+      "model": "Beetel",
+      "image": "images/car2.jpg"
+    },
+    {
+      "Year": "2015",
+      "make": "Audi",
+      "model": "A10",
+      "image": "images/car3.jpg"
+    },
+    {
+      "Year": "2015",
+      "make": "Honda",
+      "model": "City",
+      "image": "images/car4.jpg"
+    },
+    {
+      "Year": "2015",
+      "make": "Maruti",
+      "model": "Celerio",
+      "image": "images/car5.jpg"
+    },
+    {
+      "Year": "2015",
+      "make": "Benz",
+      "model": "C2000",
+      "image": "images/car6.jpg"
+    }
+  ]
+}
