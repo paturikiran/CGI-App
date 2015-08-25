@@ -5,7 +5,9 @@
     <title>FuBu.com</title>
     <link rel="stylesheet" href="Content/css/bootstrap.min.css">
     <link rel="stylesheet" href="Content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="Vendor/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="Vendor/bootstrap.min.js"></script>
     <script src="Vendor/angular.min.js"></script>
 </head>
@@ -36,16 +38,44 @@
     </nav>
     <!--content-->
     <div class="container">
-         <div ng-include="selectedTemplate"></div>
+    <!--     <div ng-include="selectedTemplate"></div>-->
+        <div ng-controller="registerCtrl">
+           <div>
+               <pre>{{existingUser | json}}</pre>
+           </div>
+
+            <div custom-register
+                 header="{{headerLabel}}"
+                 fname="existingUser.firstName"
+                    lname="existingUser.lastName"
+                    email="existingUser.email"
+                    date-of-birth="existingUser.dob"
+                    user-registration="registerUser()"></div>
+        </div>
+        <div custom-field></div>
+    </div>
+    <!--<div class="panel panel-default" custom-click>
+        <a href="#">Click me</a>
+        <div class="panel-heading"></div>
+        <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.<br> <a href="#">Click here</a> to enable the page.</div>
+    </div>-->
+</div>
     </div>
 </div>
 <script src="app/app.js"></script>
+<script src="app/directives/customParent.js"></script>
+<script src="app/directives/customShowHide.js"></script>
+<script src="app/directives/customClick.js"></script>
+<script src="app/directives/customDatePicker.js"></script>
+<script src="app/directives/customRegister.js"></script>
+<script src="app/directives/customField.js"></script>
 <script src="app/services/menuService.js"></script>
 <script src="app/controllers/menuCtrl.js">
 </script>
 <script src="app/filters/phoneFormatter.js"></script>
 <script src="app/services/vehicleService.js"></script>
 <script src="app/controllers/vehicleCtrl.js"></script>
+<script src="app/controllers/registerCtrl.js"></script>
 
 </body>
 </html>

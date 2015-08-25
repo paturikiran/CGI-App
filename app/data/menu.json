@@ -9,6 +9,12 @@
 "displayName": "Cars",
   "class": "",
 "htmlTemplate": "app/templates/cars.html"
-}
+},
+
+  {
+    "displayName": "Register",
+    "class": "",
+    "htmlTemplate": "app/templates/register.html"
+  }
 ]
 }
